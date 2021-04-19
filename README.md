@@ -4,7 +4,10 @@ The aim of my task is to create unit tests, fakes, stubs and mocks for the progr
 
 ## Links and Submission
 
-* Link to class for data load function to be doubled -
-* Functions that can be doubled -
-* Link to class with unit tests -
-* List names of unit tests methods for stub, mock and fake -
+* Link to class for data load function to be doubled - https://github.com/MillieM27/tsi_individual/blob/main/src/ReadCSVFile.py
+* Functions that can be doubled - 
+* Link to class with unit tests - https://github.com/MillieM27/tsi_individual/blob/main/test/test_readCSV.py
+* List names of unit tests methods for stub, mock and fake - 
+*   unittest - test_CSV
+*   Fake - test_fakeData
+*   Mock - test_readFileData
