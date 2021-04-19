@@ -3,7 +3,7 @@ import csv
 
 class ReadCSVFile:
 
-    def getFileData(self,fileName):
+    def getFileData(self, fileName):
         fileData = []
         with open('C:/Users/milli/PycharmProjects/tsi_individual/resource/' + fileName, 'rt')as dataFile:
             fileReader = csv.reader(dataFile)
@@ -11,5 +11,5 @@ class ReadCSVFile:
                 fileData.append(row)
         return fileData
 
-    def getLastLines(self, fileName, numerOfLines):
-        return getFileData(fileName)[-1 * numerOfLines]
+    def getLastLines(self, fileName, numberOfLines):
+        return self.getLastLines(fileName)[-1 * numberOfLines]

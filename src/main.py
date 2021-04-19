@@ -1,13 +1,13 @@
 from src.LogIn import LogIn
-from src.AddContact import AddContact
+from src.AddCustomer import AddCustomer
 
 
 class Main:
     def main():
-        logIn = LogIn()
-        logIn.logIn()
-        addContact = AddContact()
-        addContact.AddContact()
+        logOn = LogIn()
+        logOn.logOn()
+        addCustomer = AddCustomer()
+        addCustomer.AddCustomer()
 
 
 if __name__ == '__main__':

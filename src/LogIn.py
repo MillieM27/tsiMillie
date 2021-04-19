@@ -2,6 +2,10 @@ from src.Customers import Customers
 
 
 class LogIn:
+
+    def __init__(self):
+        self.Config = None
+
     def getPassword(self,phoneNumber):
         customers = Customers()
         customerData = customers.loadCustomers()
@@ -13,13 +17,20 @@ class LogIn:
             counter += 1
         return password
 
-    def logIn(self):
+    def logOn(self):
         phoneNumber = input("Enter your mobile number ")
         password = self.getPassword(phoneNumber)
         if password == "":
             print("You are not a user")
         else:
             if input("Enter password ") == password:
-                print("Welcome", phoneNumber, "- You are logged in")
+                print("Welcome - You are logged in")
             else:
                 print("Incorrect Password - the account has been locked")
+
+    def display(self):
+        return self.logOn()
+
+    def getCustomers(self):
+        return self.getCustomers()
+
